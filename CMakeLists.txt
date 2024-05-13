@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(dsf2flac)
-
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # check OS before we start
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     # On Linux a static executable is made, this maximises portability.

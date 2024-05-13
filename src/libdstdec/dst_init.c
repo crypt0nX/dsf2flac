@@ -67,6 +67,7 @@ Changes:
 #if !defined(NO_SSE2) && (defined(_M_IX86) || defined(_M_X64) || defined(__i386__) || defined(__x86_64__))
 #include <emmintrin.h>
 #endif
+#include <mm_malloc.h>  // Specifically for _mm_malloc and _mm_free
 #include "dst_init.h"
 #include "ccp_calc.h"
 #include "conststr.h"
